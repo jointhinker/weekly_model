@@ -36,7 +36,6 @@ def setOfWords2Vec(vocabList,inputSet):
 '''
     returnVec =[0]*len(vocabList)
     for word in inputSet:
-        #在此函数中有个小疑问：当词向量在字典中出现，则将该文档的词向量对应词索引处置为1，这里假设每条留言中出现的词汇不重复。但如果该词出现多次呢？不是该相加么。。
         if word in vocabList:
             returnVec[vocabList.index(word)] += 1
         else:
