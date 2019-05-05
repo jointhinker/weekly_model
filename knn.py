@@ -2,6 +2,7 @@
 import csv
 from numpy import *
 import time
+from pca import pca
 
 def normalize(data):
     m,n = data.shape
